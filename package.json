@@ -1,0 +1,20 @@
+{
+  "name": "ts-node-mocha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-single": "mocha test/test.ts --require ts-node/register && mocha test/test3.ts --require ts-node/register && mocha test/newtest.ts --require ts-node/register",
+    "test": "mocha test/**/*.ts --require ts-node/register",
+    "postinstall": "tsd install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "should": "^7.1.1",
+    "ts-node": "^0.5.3",
+    "typescript": "^1.6.2"
+  }
+}
